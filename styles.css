@@ -436,7 +436,20 @@ nav a {
 
   .navbar .btn-primary {
     display: none;
+  }
 
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navbar img {
+    display: flex;
+    flex-wrap: wrap;
+    /* allows wrapping if needed */
+    justify-content: center;
+    gap: 15px;
   }
 
   .hero .btn-outline,
@@ -495,13 +508,11 @@ nav a {
   .cards {
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
   }
 
   .card {
     width: 100%;
     max-width: 100%;
-    padding: 30px;
   }
 
   .card img {
@@ -554,6 +565,10 @@ nav a {
 
   .testimonials::-webkit-scrollbar-thumb:hover {
     background: #7c3aed;
+  }
+
+  .community-bottom img {
+    display: none;
   }
 }
 
