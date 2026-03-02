@@ -455,6 +455,131 @@ nav a {
   }
 
   .hero {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .about-section {
+    padding: 80px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .about-container {
+    padding: 80px 8%;
+  }
+
+  .about-text {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .about-list {
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: left;
+  }
+
+  .about-image img {
+    display: none;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .what-you-can-do {
+    text-align: center;
+  }
+
+  .community-section {
+    text-align: center;
+  }
+
+  .community-section {
+    padding: 100px 20px;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0;
+    scroll-snap-type: x mandatory;
+
+  }
+
+  .testimonial-card {
+    flex: 0 0 280px;
+    margin-bottom: 30px;
+    scroll-snap-align: start;
+
+  }
+
+  .testimonials::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .testimonials::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .testimonials::-webkit-scrollbar-thumb {
+    background: #8b5cf6;
+    border-radius: 10px;
+  }
+
+  .testimonials::-webkit-scrollbar-thumb:hover {
+    background: #7c3aed;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar .btn-primary {
+    display: none;
+
+  }
+
+  .hero .btn-outline,
+  .btn-primary {
+    /* display: flex;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 100%; */
+    display: block;
+    width: 100%;
+    left: 0;
+    margin: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .hero {
     flex-direction: column;
   }
 
@@ -535,5 +660,4 @@ nav a {
   .testimonials::-webkit-scrollbar-thumb:hover {
     background: #7c3aed;
   }
-
 }
